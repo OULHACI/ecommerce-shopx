@@ -1,0 +1,10 @@
+.seller-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+.seller-stat { padding: 24px; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+.seller-stat .stat-icon { font-size: 32px; margin-bottom: 6px; }
+.seller-stat .stat-value { font-size: 28px; font-weight: 800; font-family: 'Syne', sans-serif; }
+.seller-stat .stat-label { font-size: 12px; color: var(--text2); text-transform: uppercase; font-weight: 600; }
+.product-form { padding: 24px; margin-bottom: 16px; }
+.product-form h3 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { }
+.form-group label { display: block; font-size: 11px; font-weight: 600; color: var(--text2); margin-bottom: 6px; text-transform: uppercase; }

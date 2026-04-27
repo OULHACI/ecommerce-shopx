@@ -1,0 +1,29 @@
+.admin-page {}
+.admin-tabs { display: flex; gap: 8px; margin-bottom: 28px; background: var(--bg2); padding: 6px; border-radius: 12px; width: fit-content; }
+.tab-btn { background: none; border: none; color: var(--text2); padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.2s; }
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { background: var(--accent); color: white; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.stat-card { padding: 24px; text-align: center; }
+.stat-icon { font-size: 36px; margin-bottom: 10px; }
+.stat-value { font-size: 32px; font-weight: 800; font-family: 'Syne', sans-serif; margin-bottom: 4px; }
+.stat-label { font-size: 12px; color: var(--text2); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }
+.analytics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media(max-width: 768px) { .analytics-grid { grid-template-columns: 1fr; } }
+.analytics-card { padding: 24px; }
+.analytics-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 20px; }
+
+.revenue-chart-card { margin-top: 20px; }
+.chart-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 10px; align-items: end; margin-top: 18px; }
+.chart-bar-wrapper { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.chart-bar { width: 100%; background: linear-gradient(180deg, var(--accent), rgba(108,99,255,0.2)); border-radius: 12px 12px 0 0; }
+.chart-bar-wrapper span { font-size: 12px; color: var(--text2); }
+.chart-bar-wrapper small { font-size: 11px; color: var(--text2); }
+.chart-summary { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 22px; color: var(--text2); }
+.chart-summary div { font-size: 14px; }
+.top-product, .low-stock-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.top-product:last-child, .low-stock-item:last-child { border-bottom: none; }
+.rank { font-size: 18px; font-weight: 800; color: var(--accent); font-family: 'Syne', sans-serif; min-width: 28px; }
+.top-product img, .low-stock-item img { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; }
+.top-product div p, .low-stock-item div p { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.top-product div span, .low-stock-item div span { font-size: 12px; color: var(--text2); }
